@@ -5,10 +5,19 @@
 //  Created by Kishore Venkatesh on 11/07/22.
 //
 
-#include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+void fun(int n)
+{
+if(n>0)
+{
+fun(n-1);
+cout<<n;
+}
+}
+int main() {
+int x=3;
+fun(x);
+return 0;
 }
